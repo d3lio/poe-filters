@@ -1,0 +1,32 @@
+Show
+    LinkedSockets >= 4
+Show
+    Sockets >= 3RGB
+Show
+    Corrupted True
+
+#*
+# Style
+#
+Show
+    Rarity Unique
+    SetBorderColor 175 96 37
+    SetBackgroundColor 0 0 0
+    MinimapIcon 0 Orange Star
+Show
+    Class Currency
+    MinimapIcon 0 Yellow Diamond
+
+#*
+# Update this value as the levels progress
+#
+Hide
+    Class "Life Flask" "Mana Flask"
+    DropLevel < 30
+
+#*
+# Show only Wand bases and Rare+ equipment
+#
+Hide
+    Class "Claw" "Dagger" "One Hand Sword" "Thrusting One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staff" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Quiver" "Gloves" "Boots" "Body Armour" "Helmet" "Shield" "Sceptre"
+    Rarity "Normal" "Magic"
