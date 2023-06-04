@@ -1,9 +1,45 @@
+
+#*
+# Show useful sockets
+#
 Show
     LinkedSockets >= 4
 Show
     Sockets >= 3RGB
 Show
+    Sockets >= 1W
+
+#*
+# Show special items
+#
+Show
     Corrupted True
+Show
+    AlternateQuality True
+Show
+    Replica True
+Show
+    Identified True
+Show
+    Corrupted True
+Show
+    Mirrored True
+Show
+    ElderItem True
+Show
+    ShaperItem True
+Show
+    AnyEnchantment True
+Show
+    FracturedItem True
+Show
+    SynthesisedItem True
+Show
+    ElderMap True
+Show
+    ShapedMap True
+Show
+    BlightedMap True
 
 #*
 # Style
@@ -26,6 +62,8 @@ Hide
 
 #*
 # Show only Wand bases and Rare+ equipment
+#
+# Caster shield bases are ignored
 #
 Hide
     Class "Claw" "Dagger" "One Hand Sword" "Thrusting One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staff" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Quiver" "Gloves" "Boots" "Body Armour" "Helmet" "Shield" "Sceptre"
