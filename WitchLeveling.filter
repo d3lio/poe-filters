@@ -54,17 +54,60 @@ Show
     MinimapIcon 0 Yellow Diamond
 
 #*
-# Update this value as the levels progress
+# Show interested bases
 #
-Hide
-    Class "Life Flask" "Mana Flask"
-    DropLevel < 30
+Show
+    Class "Wand"
 
 #*
-# Show only Wand bases and Rare+ equipment
-#
-# Caster shield bases are ignored
+# Show only Rare+ equipment
 #
 Hide
-    Class "Claw" "Dagger" "One Hand Sword" "Thrusting One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staff" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Quiver" "Gloves" "Boots" "Body Armour" "Helmet" "Shield" "Sceptre"
+    Class "Claw" "Dagger" "One Hand Sword" "Thrusting One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staff" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Quiver" "Gloves" "Boots" "Body Armour" "Helmet" "Shield" "Sceptre" "Wand"
     Rarity "Normal" "Magic"
+
+#*
+# Flasks
+#
+Hide
+    BaseType "Small Life Flask" "Small Mana Flask" "Medium Life Flask" "Medium Mana Flask"
+    AreaLevel >= 9
+Hide
+    BaseType "Large Life Flask" "Large Mana Flask"
+    AreaLevel >= 16
+Hide
+    BaseType "Greater Life Flask" "Greater Mana Flask"
+    AreaLevel >= 22
+Hide
+    BaseType "Grand Life Flask" "Grand Mana Flask"
+    AreaLevel >= 26
+Hide
+    BaseType "Giant Life Flask" "Giant Mana Flask"
+    AreaLevel >= 30
+Hide
+    BaseType "Colossal Life Flask" "Colossal Mana Flask"
+    AreaLevel >= 36
+Hide
+    BaseType "Sacred Life Flask" "Sacred Mana Flask"
+    AreaLevel >= 42
+Hide
+    BaseType "Hallowed Life Flask" "Hallowed Mana Flask"
+    AreaLevel >= 60
+Hide
+    BaseType "Sanctified Life Flask" "Sanctified Mana Flask"
+    AreaLevel >= 65
+Hide
+    BaseType "Small Hybrid Flask"
+    AreaLevel >= 20
+Hide
+    BaseType "Medium Hybrid Flask"
+    AreaLevel >= 30
+Hide
+    BaseType "Large Hybrid Flask"
+    AreaLevel >= 40
+Hide
+    BaseType "Colossal Hybrid Flask"
+    AreaLevel >= 50
+Hide
+    BaseType "Sacred Hybrid Flask"
+    AreaLevel >= 60
