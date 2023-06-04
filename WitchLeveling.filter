@@ -5,7 +5,7 @@
 Show
     LinkedSockets >= 4
 Show
-    Sockets >= 3RGB
+    SocketGroup >= 3RGB
 Show
     Sockets >= 1W
 
