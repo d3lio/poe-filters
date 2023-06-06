@@ -1,0 +1,113 @@
+#*
+# Show useful sockets
+#
+Show
+    Sockets == 6
+    SetBorderColor 255 255 119
+Show
+    LinkedSockets == 5
+    SetBorderColor 255 255 119
+Show
+    LinkedSockets == 6
+    SetBorderColor 175 96 37
+    MinimapIcon 0 Orange Star
+
+#*
+# Show special items
+#
+Show
+    Corrupted True
+    SetBorderColor 210 0 0
+    Continue
+Show
+    AlternateQuality True
+Show
+    Replica True
+# Show
+#    Identified True
+Show
+    Mirrored True
+Show
+    ElderItem True
+Show
+    ShaperItem True
+Show
+    AnyEnchantment True
+Show
+    FracturedItem True
+    SetBorderColor 30 144 255
+Show
+    SynthesisedItem True
+Show
+    ElderMap True
+Show
+    ShapedMap True
+Show
+    BlightedMap True
+Show
+    Class Heist
+    SetBorderColor 255 215 0
+
+#*
+# Style
+#
+Show
+    Rarity Unique
+    SetBorderColor 175 96 37
+    SetBackgroundColor 0 0 0
+    MinimapIcon 0 Red Star
+Show
+    BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation"
+Show
+    BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror"
+    SetBackgroundColor 255 255 255
+    MinimapIcon 0 Red Diamond
+Show
+    Class Currency
+    MinimapIcon 0 Yellow Diamond
+Show
+    Class "Jewel"
+    SetBorderColor 255 255 255
+Show
+    Class "Divination Card"
+    MinimapIcon 0 Cyan Diamond
+    SetBorderColor 14 186 255 128
+Show
+    Sockets >= 1A
+    SetBorderColor 74 0 160
+
+#*
+# Flasks
+#
+Show
+    Class "Flask"
+    SetTextColor 30 144 255
+    Continue
+Show
+    Class "Life Flask" "Mana Flask" "Hybrid Flask"
+    Quality >= 5
+    SetBorderColor 30 144 255
+Show
+    BaseType "Eternal Life Flask" "Eternal Mana Flask"
+# Show
+#     BaseType "Divine Life Flask" "Divine Mana Flask"
+# Show
+#     BaseType "Hallowed Hybrid Flask"
+Hide
+    Class "Life Flask" "Mana Flask" "Hybrid Flask"
+
+#*
+# Show Amethyst Ring bases
+#
+Show
+    BaseType "Amethyst Ring"
+    Rarity "Normal"
+    ItemLevel >= 60
+
+#*
+# Show only Rare+ equipment
+#
+Hide
+    Class "Claw" "Dagger" "One Hand Sword" "Thrusting One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staff" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Quiver" "Gloves" "Boots" "Body Armour" "Helmet" "Shield" "Sceptre" "Wand" "Amulet" "Ring" "Belt"
+    Rarity "Normal" "Magic"
+    DropLevel >= 60
