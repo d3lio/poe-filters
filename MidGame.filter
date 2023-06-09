@@ -59,7 +59,7 @@ Show
 Show
     BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation"
 Show
-    BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror"
+    BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror of Kalandra"
     SetTextColor 42 42 42
     SetBackgroundColor 221 221 221
     SetBorderColor 42 42 42
@@ -92,12 +92,10 @@ Show
     Class "Life Flask" "Mana Flask" "Hybrid Flask"
     Quality >= 5
     SetBorderColor 30 144 255
+# Show
+#     BaseType "Eternal Life Flask" "Eternal Mana Flask" "Divine Mana Flask"
 Show
-    BaseType "Eternal Life Flask" "Eternal Mana Flask"
-# Show
-#     BaseType "Divine Life Flask" "Divine Mana Flask"
-# Show
-#     BaseType "Hallowed Hybrid Flask"
+    BaseType "Divine Life Flask"
 Hide
     Class "Life Flask" "Mana Flask" "Hybrid Flask"
 
