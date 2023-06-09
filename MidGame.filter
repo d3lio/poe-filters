@@ -60,7 +60,9 @@ Show
     BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation"
 Show
     BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror"
-    SetBackgroundColor 255 255 255
+    SetTextColor 42 42 42
+    SetBackgroundColor 221 221 221
+    SetBorderColor 42 42 42
     MinimapIcon 0 Red Diamond
 Show
     Class Currency
@@ -75,6 +77,9 @@ Show
 Show
     Sockets >= 1A
     SetBorderColor 74 0 160
+Show
+    BaseType "Stone of Passage"
+    MinimapIcon 0 Green Circle
 
 #*
 # Flasks
@@ -110,4 +115,3 @@ Show
 Hide
     Class "Claw" "Dagger" "One Hand Sword" "Thrusting One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staff" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Quiver" "Gloves" "Boots" "Body Armour" "Helmet" "Shield" "Sceptre" "Wand" "Amulet" "Ring" "Belt"
     Rarity "Normal" "Magic"
-    DropLevel >= 60
