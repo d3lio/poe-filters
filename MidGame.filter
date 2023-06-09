@@ -52,6 +52,10 @@ Show
 # Style
 #
 Show
+    Class Map
+    MinimapIcon 0 White Kite
+    Continue
+Show
     Rarity Unique
     SetBorderColor 175 96 37
     SetBackgroundColor 0 0 0
@@ -64,6 +68,9 @@ Show
     SetBackgroundColor 221 221 221
     SetBorderColor 42 42 42
     MinimapIcon 0 Red Diamond
+Show
+    Class Currency
+    MinimapIcon 0 Yellow Diamond
 Show
     Class Currency
     MinimapIcon 0 Yellow Diamond
