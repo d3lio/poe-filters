@@ -124,6 +124,8 @@ Show
 Show
     Class Gems
     Quality >= 1
+Hide
+    Class Gems
 
 #*
 # Show only Rare+ equipment
