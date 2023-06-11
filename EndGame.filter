@@ -54,10 +54,18 @@ Show
     SetBorderColor 175 96 37
     SetBackgroundColor 0 0 0
     MinimapIcon 0 Red Star
-Hide
-    BaseType "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation"
 Show
-    BaseType "Scroll of Wisdom" "Orb of Augmentation"
+    BaseType "Orb of Transmutation" "Orb of Augmentation"
+    StackSize >= 5
+Show
+    BaseType "Armourer's Scrap" "Blacksmith's Whetstone"
+    StackSize >= 10
+Show
+    BaseType "Portal Scroll"
+    StackSize >= 20
+Show
+    BaseType "Scroll of Wisdom"
+    StackSize >= 3
 Show
     BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror of Kalandra"
     SetTextColor 42 42 42
