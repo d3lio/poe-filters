@@ -20,13 +20,7 @@ Show
     SetBorderColor 210 0 0
     Continue
 Show
-    AlternateQuality True
-Show
     Replica True
-# Show
-#    Identified True
-Show
-    Mirrored True
 Show
     ElderItem True
 Show
@@ -60,8 +54,10 @@ Show
     SetBorderColor 175 96 37
     SetBackgroundColor 0 0 0
     MinimapIcon 0 Red Star
+Hide
+    BaseType "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation"
 Show
-    BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation"
+    BaseType "Scroll of Wisdom" "Orb of Augmentation"
 Show
     BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror of Kalandra"
     SetTextColor 42 42 42
@@ -98,10 +94,9 @@ Show
     Class "Life Flask" "Mana Flask" "Hybrid Flask"
     Quality >= 5
     SetBorderColor 30 144 255
-# Show
-#     BaseType "Eternal Life Flask" "Eternal Mana Flask" "Divine Mana Flask"
 Show
     BaseType "Divine Life Flask"
+    ItemLevel >= 83
 Hide
     Class "Life Flask" "Mana Flask" "Hybrid Flask"
 
@@ -111,7 +106,24 @@ Hide
 Show
     BaseType "Amethyst Ring"
     Rarity "Normal"
-    ItemLevel >= 60
+    ItemLevel >= 72
+
+#*
+# Gems
+#
+Show
+    Class Gems
+    BaseType "Empower Support" "Enhance Support" "Enlighten Support" "Portal" "Awakened"
+    SetBorderColor 175 96 37
+    MinimapIcon 0 Orange Circle
+Show
+    Class Gems
+    AlternateQuality True
+    SetBorderColor 255 255 119
+    MinimapIcon 0 Green Circle
+Show
+    Class Gems
+    Quality >= 1
 
 #*
 # Show only Rare+ equipment
