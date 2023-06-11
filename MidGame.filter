@@ -86,6 +86,8 @@ Show
     SetBorderColor 74 0 160
 Show
     BaseType "Stone of Passage"
+    SetTextColor 74 230 58
+    SetBorderColor 74 230 58
     MinimapIcon 0 Green Circle
 
 #*
