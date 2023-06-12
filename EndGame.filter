@@ -12,6 +12,12 @@ Show
     SetBorderColor 175 96 37
     MinimapIcon 0 Orange Star
 
+Show
+    Width 1
+    Height > 2
+    SocketGroup RGB
+    SetBorderColor 88 0 179
+
 #*
 # Show special items
 #
@@ -54,18 +60,20 @@ Show
     SetBorderColor 175 96 37
     SetBackgroundColor 0 0 0
     MinimapIcon 0 Red Star
-Show
+Hide
     BaseType "Orb of Transmutation" "Orb of Augmentation"
-    StackSize >= 5
-Show
+    StackSize < 5
+Hide
     BaseType "Armourer's Scrap" "Blacksmith's Whetstone"
-    StackSize >= 10
-Show
+    StackSize < 10
+Hide
     BaseType "Portal Scroll"
-    StackSize >= 20
+    StackSize < 20
+Hide
+    BaseType "Scroll of Wisdom"
+    StackSize < 5
 Show
     BaseType "Scroll of Wisdom"
-    StackSize >= 3
 Show
     BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror of Kalandra"
     SetTextColor 42 42 42
@@ -132,6 +140,9 @@ Show
 Show
     Class Gems
     Quality >= 1
+Show
+    Class Gems
+    Corrupted True
 Hide
     Class Gems
 
