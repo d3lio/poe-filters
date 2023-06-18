@@ -232,7 +232,13 @@ Show
 # Body Special
 Show
     BaseType "Astral Plate" "Assassin's Garb" "Occultist's Vestment" "Carnal Armour" "Sacrificial Garb"
+    Rarity "Rare"
     SetBorderColor 136 136 255
+Show
+    BaseType "Astral Plate" "Assassin's Garb" "Occultist's Vestment" "Carnal Armour" "Sacrificial Garb"
+    ItemLevel >= 86
+    SetBorderColor 136 136 255
+    SetFontSize 24
 
 # Gloves Single
 Show
@@ -245,7 +251,13 @@ Show
 # Gloves Special
 Show
     BaseType "Debilitation Gauntlets" "Spiked Gloves" "Gripped Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets"
+    Rarity "Rare"
     SetBorderColor 136 136 255
+Show
+    BaseType "Debilitation Gauntlets" "Spiked Gloves" "Gripped Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets"
+    ItemLevel >= 86
+    SetBorderColor 136 136 255
+    SetFontSize 24
 
 # Helmet Single
 Show
@@ -258,7 +270,13 @@ Show
 # Helmet Special
 Show
     BaseType "Penitent Mask" "Bone Helmet" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
+    Rarity "Rare"
     SetBorderColor 136 136 255
+Show
+    BaseType "Penitent Mask" "Bone Helmet" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
+    ItemLevel >= 86
+    SetBorderColor 136 136 255
+    SetFontSize 24
 
 # Boots Single
 Show
@@ -271,7 +289,13 @@ Show
 # Boots Special
 Show
     BaseType "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Two-Toned Boots" "Fugitive Boots" "Runic Sabatons"
+    Rarity "Rare"
     SetBorderColor 136 136 255
+Show
+    BaseType "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Two-Toned Boots" "Fugitive Boots" "Runic Sabatons"
+    ItemLevel >= 86
+    SetBorderColor 136 136 255
+    SetFontSize 24
 
 # Experimented
 Show
@@ -300,6 +324,7 @@ Show
     BaseType "Vaal Regalia" "Hubris Circlet" "Fingerless Silk Gloves" "Sorcerer Boots" "Crystal Belt"
     ItemLevel >= 86
     SetBorderColor 74 230 58
+    SetFontSize 24
 
 # Good price bases
 Show
