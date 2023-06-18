@@ -1,0 +1,313 @@
+#*
+# Show useful sockets
+#
+Show
+    Sockets == 6
+    SetBorderColor 255 255 119
+Show
+    Sockets == 6A
+    SetBorderColor 74 0 160
+Show
+    LinkedSockets == 5
+    SetBorderColor 255 255 119
+Show
+    LinkedSockets == 6
+    SetBorderColor 175 96 37
+    MinimapIcon 0 Orange Star
+Show
+    Width 1
+    Height > 2
+    SocketGroup RGB
+    SetBorderColor 88 0 179
+
+#*
+# Show special items
+#
+Show
+    Corrupted True
+    SetBorderColor 210 0 0
+    Continue
+Show
+    Replica True
+    SetBorderColor 184 218 242
+Show
+    ElderItem True
+    SetBorderColor 184 218 242
+Show
+    ShaperItem True
+    SetBorderColor 184 218 242
+Show
+    AnyEnchantment True
+    SetBorderColor 184 218 242
+Show
+    SynthesisedItem True
+    SetBorderColor 184 218 242
+Show
+    FracturedItem True
+    SetBorderColor 210 0 220
+Show
+    ElderMap True
+    SetBorderColor 210 0 220
+Show
+    ShapedMap True
+    SetBorderColor 210 0 220
+Show
+    BlightedMap True
+    SetBorderColor 210 0 220
+# TODO
+Show
+    Class Heist
+    SetBorderColor 255 215 0
+
+#*
+# Maps
+#
+Show
+    Class Map
+    MinimapIcon 0 White Kite
+    Continue
+
+#*
+# Uniques
+#
+Show
+    Rarity Unique
+    SetBorderColor 175 96 37
+    SetBackgroundColor 0 0 0
+    MinimapIcon 0 Red Star
+
+#*
+# Currency
+#
+Show
+    Class Currency
+    BaseType "Tainted"
+    SetBorderColor 170 158 130
+    MinimapIcon 0 Yellow Diamond
+Hide
+    BaseType "Orb of Transmutation" "Orb of Augmentation"
+    StackSize < 5
+Hide
+    BaseType "Armourer's Scrap" "Blacksmith's Whetstone"
+    StackSize < 10
+Hide
+    BaseType "Portal Scroll"
+    StackSize < 20
+Hide
+    BaseType "Scroll of Wisdom"
+    StackSize < 5
+Show
+    BaseType "Scroll of Wisdom"
+Show
+    BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror of Kalandra"
+    SetTextColor 42 42 42
+    SetBackgroundColor 221 221 221
+    SetBorderColor 42 42 42
+    MinimapIcon 0 Red Diamond
+Show
+    Class Currency
+    SetBorderColor 170 158 130
+    MinimapIcon 0 Yellow Diamond
+
+#*
+# Jewels
+#
+Show
+    Class "Jewel"
+    Rarity "Rare"
+    SetBorderColor 255 255 255
+Show
+    EnchantmentPassiveNum > 0
+    SetBorderColor 255 255 255
+
+#*
+# Divination
+#
+Show
+    Class "Divination Card"
+    MinimapIcon 0 Cyan Diamond
+    SetBorderColor 14 186 255 128
+
+#*
+# Special Items
+#
+Show
+    BaseType "Stone of Passage"
+    SetTextColor 74 230 58
+    SetBorderColor 74 230 58
+    MinimapIcon 0 Green Circle
+
+#*
+# Flasks
+#
+Show
+    Class "Flask"
+    SetTextColor 30 144 255
+    Continue
+Show
+    Class "Life Flask" "Mana Flask" "Hybrid Flask"
+    Quality >= 10
+    SetBorderColor 30 144 255
+# Show
+#     BaseType "Divine Life Flask"
+#     ItemLevel >= 83
+Show
+    BaseType "Eternal Life Flask"
+    ItemLevel >= 83
+Hide
+    Class "Life Flask" "Mana Flask" "Hybrid Flask"
+
+#*
+# Gems
+#
+Show
+    Class Gems
+    BaseType "Empower Support" "Enhance Support" "Enlighten Support" "Portal" "Awakened"
+    SetBorderColor 175 96 37
+    MinimapIcon 0 Orange Circle
+Show
+    Class Gems
+    AlternateQuality True
+    SetBorderColor 255 255 119
+    MinimapIcon 0 Green Circle
+Show
+    Class Gems
+    Quality >= 1
+Show
+    Class Gems
+    Corrupted True
+Hide
+    Class Gems
+
+#*
+# Bases
+#
+
+# Amethyst
+Show
+    BaseType "Amethyst Ring"
+    Rarity "Normal"
+    ItemLevel >= 85
+
+# Belts
+Show
+    BaseType "Stygian Vise" "Micro-Distillery Belt" "Mechalarm Belt" "Vanguard Belt" "Crystal Belt"
+    SetTextColor 38 0 86
+    SetBackgroundColor 192 128 254
+    SetBorderColor 88 0 179
+
+# Rings
+Show
+    BaseType "Cogwork Ring" "Geodesic Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
+    SetTextColor 38 0 86
+    SetBackgroundColor 192 128 254
+    SetBorderColor 88 0 179
+
+# Amulets
+Show
+    BaseType "Unset Amulet" "Simplex Amulet" "Astrolabe Amulet" "Marble Amulet" "Seaglass Amulet" "Blue Pearl Amulet"
+    SetTextColor 38 0 86
+    SetBackgroundColor 192 128 254
+    SetBorderColor 88 0 179
+Show
+    BaseType "Talisman"
+    SetTextColor 210 0 220
+    SetBorderColor 200 200 200
+
+# Jewelry
+Show
+    Class "Ring" "Amulet" "Belt"
+    Rarity "Rare"
+    SetBorderColor 255 255 119
+
+
+# Body Single
+Show
+    BaseType "Gladiator Plate" "Glorious Plate" "Zodiac Leather" "Vaal Regalia"
+    Rarity "Rare"
+# Body Hybrid
+Show
+    BaseType "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb"
+    Rarity "Rare"
+# Body Special
+Show
+    BaseType "Astral Plate" "Assassin's Garb" "Occultist's Vestment" "Carnal Armour" "Sacrificial Garb"
+    SetBorderColor 136 136 255
+
+# Gloves Single
+Show
+    BaseType "Vaal Gauntlets" "Titan Gauntlets" "Slink Gloves" "Stealth Gloves" "Arcanist Gloves" "Sorcerer Gloves"
+    Rarity "Rare"
+# Gloves Hybrid
+Show
+    BaseType "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
+    Rarity "Rare"
+# Gloves Special
+Show
+    BaseType "Debilitation Gauntlets" "Spiked Gloves" "Gripped Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets"
+    SetBorderColor 136 136 255
+
+# Helmet Single
+Show
+    BaseType "Royal Burgonet" "Eternal Burgonet" "Sinner Tricorne" "Lion Pelt" "Mind Cage" "Hubris Circlet"
+    Rarity "Rare"
+# Helmet Hybrid
+Show
+    BaseType "Pig-Faced Bascinet" "Nightmare Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask"
+    Rarity "Rare"
+# Helmet Special
+Show
+    BaseType "Penitent Mask" "Bone Helmet" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
+    SetBorderColor 136 136 255
+
+# Boots Single
+Show
+    BaseType "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots"
+    Rarity "Rare"
+# Boots Hybrid
+Show
+    BaseType "Dragonscale Boots" "Crusader Boots" "Murder Boots"
+    Rarity "Rare"
+# Boots Special
+Show
+    BaseType "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Two-Toned Boots" "Fugitive Boots" "Runic Sabatons"
+    SetBorderColor 136 136 255
+
+# Experimented
+Show
+    BaseType "Psychotic Axe" "Apex Cleaver" "Solarine Bow" "Void Fangs" "Pneumatic Dagger" "Infernal Blade" "Boom Mace" "Alternating Sceptre" "Impact Force Propagator" "Battery Staff" "Eventuality Rod" "Anarchic Spiritblade" "Banishing Blade" "Accumulator Wand" "Heat-attuned Tower Shield" "Cold-attuned Buckler" "Transfer-attuned Spirit Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Simplex Amulet" "Astrolabe Amulet" "Cogwork Ring" "Geodesic Ring"
+    SetBorderColor 255 255 119
+
+# Wands
+Show
+    BaseType "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Convoking Wand"
+    Rarity "Rare"
+# Staves
+Show
+    BaseType "Eclipse Staff"
+    Rarity "Rare"
+# Scepters
+Show
+    BaseType "Void Sceptre"
+    Rarity "Rare"
+# Shields
+Show
+    BaseType "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield"
+    Rarity "Rare"
+
+# ES crafting bases
+Show
+    BaseType "Vaal Regalia" "Hubris Circlet" "Fingerless Silk Gloves" "Sorcerer Boots" "Crystal Belt"
+    ItemLevel >= 86
+    SetBorderColor 74 230 58
+
+# Good price bases
+Show
+    BaseType "Thicket Bow"
+    SetTextColor 255 255 119
+
+#*
+# Remove the rest of the bases
+#
+Hide
+    Class "Claw" "Dagger" "One Hand Sword" "Thrusting One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staff" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Quiver" "Gloves" "Boots" "Body Armour" "Helmet" "Shield" "Sceptre" "Wand" "Amulet" "Ring" "Belt"

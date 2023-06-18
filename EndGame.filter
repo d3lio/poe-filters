@@ -5,13 +5,15 @@ Show
     Sockets == 6
     SetBorderColor 255 255 119
 Show
+    Sockets == 6A
+    SetBorderColor 74 0 160
+Show
     LinkedSockets == 5
     SetBorderColor 255 255 119
 Show
     LinkedSockets == 6
     SetBorderColor 175 96 37
     MinimapIcon 0 Orange Star
-
 Show
     Width 1
     Height > 2
@@ -27,39 +29,61 @@ Show
     Continue
 Show
     Replica True
+    SetBorderColor 184 218 242
 Show
     ElderItem True
+    SetBorderColor 184 218 242
 Show
     ShaperItem True
+    SetBorderColor 184 218 242
 Show
     AnyEnchantment True
-Show
-    FracturedItem True
-    SetBorderColor 30 144 255
+    SetBorderColor 184 218 242
 Show
     SynthesisedItem True
+    SetBorderColor 184 218 242
+Show
+    FracturedItem True
+    SetBorderColor 210 0 220
 Show
     ElderMap True
+    SetBorderColor 210 0 220
 Show
     ShapedMap True
+    SetBorderColor 210 0 220
 Show
     BlightedMap True
+    SetBorderColor 210 0 220
+# TODO
 Show
     Class Heist
     SetBorderColor 255 215 0
 
 #*
-# Style
+# Maps
 #
 Show
     Class Map
     MinimapIcon 0 White Kite
     Continue
+
+#*
+# Uniques
+#
 Show
     Rarity Unique
     SetBorderColor 175 96 37
     SetBackgroundColor 0 0 0
     MinimapIcon 0 Red Star
+
+#*
+# Currency
+#
+Show
+    Class Currency
+    BaseType "Tainted"
+    SetBorderColor 170 158 130
+    MinimapIcon 0 Yellow Diamond
 Hide
     BaseType "Orb of Transmutation" "Orb of Augmentation"
     StackSize < 5
@@ -82,17 +106,31 @@ Show
     MinimapIcon 0 Red Diamond
 Show
     Class Currency
+    SetBorderColor 170 158 130
     MinimapIcon 0 Yellow Diamond
+
+#*
+# Jewels
+#
 Show
     Class "Jewel"
+    Rarity "Rare"
     SetBorderColor 255 255 255
+Show
+    EnchantmentPassiveNum > 0
+    SetBorderColor 255 255 255
+
+#*
+# Divination
+#
 Show
     Class "Divination Card"
     MinimapIcon 0 Cyan Diamond
     SetBorderColor 14 186 255 128
-Show
-    Sockets >= 1A
-    SetBorderColor 74 0 160
+
+#*
+# Special Items
+#
 Show
     BaseType "Stone of Passage"
     SetTextColor 74 230 58
@@ -108,21 +146,16 @@ Show
     Continue
 Show
     Class "Life Flask" "Mana Flask" "Hybrid Flask"
-    Quality >= 5
+    Quality >= 10
     SetBorderColor 30 144 255
+# Show
+#     BaseType "Divine Life Flask"
+#     ItemLevel >= 83
 Show
-    BaseType "Divine Life Flask"
+    BaseType "Eternal Life Flask"
     ItemLevel >= 83
 Hide
     Class "Life Flask" "Mana Flask" "Hybrid Flask"
-
-#*
-# Show Amethyst Ring bases
-#
-Show
-    BaseType "Amethyst Ring"
-    Rarity "Normal"
-    ItemLevel >= 72
 
 #*
 # Gems
@@ -147,7 +180,7 @@ Hide
     Class Gems
 
 #*
-# Show only Rare+ equipment
+# Hide normal and magic equipment
 #
 Hide
     Class "Claw" "Dagger" "One Hand Sword" "Thrusting One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staff" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Quiver" "Gloves" "Boots" "Body Armour" "Helmet" "Shield" "Sceptre" "Wand" "Amulet" "Ring" "Belt"
