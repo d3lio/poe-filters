@@ -54,10 +54,9 @@ Show
 Show
     BlightedMap True
     SetBorderColor 210 0 220
-# TODO
 Show
-    Class Heist
-    SetBorderColor 255 215 0
+    Class Contract
+    SetBorderColor 210 0 220
 
 #*
 # Maps
@@ -97,7 +96,7 @@ Hide
     BaseType "Scroll of Wisdom"
     StackSize < 5
 Show
-    BaseType "Scroll of Wisdom"
+    BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation"
 Show
     BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror of Kalandra"
     SetTextColor 42 42 42

@@ -1,24 +1,24 @@
 #*
 # Show useful sockets
 #
-Show
-    Sockets == 6
-    SetBorderColor 255 255 119
+# Show
+#     Sockets == 6
+#     SetBorderColor 255 255 119
 Show
     Sockets == 6A
     SetBorderColor 74 0 160
-Show
-    LinkedSockets == 5
-    SetBorderColor 255 255 119
+# Show
+#     LinkedSockets == 5
+#     SetBorderColor 255 255 119
 Show
     LinkedSockets == 6
     SetBorderColor 175 96 37
     MinimapIcon 0 Orange Star
-Show
-    Width 1
-    Height > 2
-    SocketGroup RGB
-    SetBorderColor 88 0 179
+# Show
+#     Width 1
+#     Height > 2
+#     SocketGroup RGB
+#     SetBorderColor 88 0 179
 
 #*
 # Show special items
@@ -54,10 +54,9 @@ Show
 Show
     BlightedMap True
     SetBorderColor 210 0 220
-# TODO
 Show
-    Class Heist
-    SetBorderColor 255 215 0
+    Class Contract
+    SetBorderColor 210 0 220
 
 #*
 # Maps
@@ -97,7 +96,7 @@ Hide
     BaseType "Scroll of Wisdom"
     StackSize < 5
 Show
-    BaseType "Scroll of Wisdom"
+    BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation"
 Show
     BaseType "Chaos Orb" "Exalted Orb" "Divine Orb" "Mirror of Kalandra"
     SetTextColor 42 42 42
@@ -108,7 +107,6 @@ Show
     Class Currency
     SetBorderColor 170 158 130
     MinimapIcon 0 Yellow Diamond
-
 #*
 # Jewels
 #
@@ -145,17 +143,15 @@ Show
     SetTextColor 30 144 255
     Continue
 Show
-    Class "Life Flask" "Mana Flask" "Hybrid Flask"
-    Quality >= 10
+    Class "Flask"
+    Quality >= 20
     SetBorderColor 30 144 255
-# Show
-#     BaseType "Divine Life Flask"
-#     ItemLevel >= 83
+    Continue
 Show
-    BaseType "Eternal Life Flask"
-    ItemLevel >= 83
+    BaseType "Granite Flask" "Silver Flask" "Amethyst Flask" "Quicksilver Flask"
+    ItemLevel >= 85
 Hide
-    Class "Life Flask" "Mana Flask" "Hybrid Flask"
+    Class "Flask"
 
 #*
 # Gems
@@ -169,19 +165,31 @@ Show
     Class Gems
     AlternateQuality True
     SetBorderColor 255 255 119
-    MinimapIcon 0 Green Circle
+    MinimapIcon 0 Cyan Circle
 Show
     Class Gems
-    Quality >= 1
+    Quality >= 20
 Show
     Class Gems
-    Corrupted True
+    GemLevel >= 20
 Hide
     Class Gems
 
 #*
 # Bases
 #
+
+# Good price bases
+Show
+    BaseType "Thicket Bow"
+    SetBorderColor 255 255 119
+
+# ES crafting bases
+Show
+    BaseType "Vaal Regalia" "Hubris Circlet" "Fingerless Silk Gloves" "Sorcerer Gloves" "Sorcerer Boots" "Crystal Belt" "Sacrificial Garb"
+    ItemLevel >= 86
+    SetBorderColor 74 230 58
+    SetFontSize 24
 
 # Amethyst
 Show
@@ -225,29 +233,32 @@ Show
 Show
     BaseType "Gladiator Plate" "Glorious Plate" "Zodiac Leather" "Vaal Regalia"
     Rarity "Rare"
+    SetFontSize 24
 # Body Hybrid
 Show
     BaseType "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb"
     Rarity "Rare"
+    SetFontSize 24
 # Body Special
 Show
     BaseType "Astral Plate" "Assassin's Garb" "Occultist's Vestment" "Carnal Armour" "Sacrificial Garb"
     Rarity "Rare"
-    SetBorderColor 136 136 255
+    SetFontSize 24
 Show
     BaseType "Astral Plate" "Assassin's Garb" "Occultist's Vestment" "Carnal Armour" "Sacrificial Garb"
     ItemLevel >= 86
-    SetBorderColor 136 136 255
     SetFontSize 24
 
 # Gloves Single
 Show
     BaseType "Vaal Gauntlets" "Titan Gauntlets" "Slink Gloves" "Stealth Gloves" "Arcanist Gloves" "Sorcerer Gloves"
     Rarity "Rare"
+    SetFontSize 24
 # Gloves Hybrid
 Show
     BaseType "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
     Rarity "Rare"
+    SetFontSize 24
 # Gloves Special
 Show
     BaseType "Debilitation Gauntlets" "Spiked Gloves" "Gripped Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets"
@@ -257,16 +268,17 @@ Show
     BaseType "Debilitation Gauntlets" "Spiked Gloves" "Gripped Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets"
     ItemLevel >= 86
     SetBorderColor 136 136 255
-    SetFontSize 24
 
 # Helmet Single
 Show
     BaseType "Royal Burgonet" "Eternal Burgonet" "Sinner Tricorne" "Lion Pelt" "Mind Cage" "Hubris Circlet"
     Rarity "Rare"
+    SetFontSize 24
 # Helmet Hybrid
 Show
     BaseType "Pig-Faced Bascinet" "Nightmare Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask"
     Rarity "Rare"
+    SetFontSize 24
 # Helmet Special
 Show
     BaseType "Penitent Mask" "Bone Helmet" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
@@ -276,16 +288,17 @@ Show
     BaseType "Penitent Mask" "Bone Helmet" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
     ItemLevel >= 86
     SetBorderColor 136 136 255
-    SetFontSize 24
 
 # Boots Single
 Show
     BaseType "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots"
     Rarity "Rare"
+    SetFontSize 24
 # Boots Hybrid
 Show
     BaseType "Dragonscale Boots" "Crusader Boots" "Murder Boots"
     Rarity "Rare"
+    SetFontSize 24
 # Boots Special
 Show
     BaseType "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Two-Toned Boots" "Fugitive Boots" "Runic Sabatons"
@@ -295,7 +308,6 @@ Show
     BaseType "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Two-Toned Boots" "Fugitive Boots" "Runic Sabatons"
     ItemLevel >= 86
     SetBorderColor 136 136 255
-    SetFontSize 24
 
 # Experimented
 Show
@@ -306,30 +318,22 @@ Show
 Show
     BaseType "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Convoking Wand"
     Rarity "Rare"
+    SetFontSize 24
 # Staves
 Show
     BaseType "Eclipse Staff"
     Rarity "Rare"
+    SetFontSize 24
 # Scepters
 Show
     BaseType "Void Sceptre"
     Rarity "Rare"
+    SetFontSize 24
 # Shields
 Show
     BaseType "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield"
     Rarity "Rare"
-
-# ES crafting bases
-Show
-    BaseType "Vaal Regalia" "Hubris Circlet" "Fingerless Silk Gloves" "Sorcerer Boots" "Crystal Belt"
-    ItemLevel >= 86
-    SetBorderColor 74 230 58
     SetFontSize 24
-
-# Good price bases
-Show
-    BaseType "Thicket Bow"
-    SetTextColor 255 255 119
 
 #*
 # Remove the rest of the bases
