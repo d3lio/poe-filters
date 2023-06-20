@@ -37,6 +37,15 @@ Show
     ShaperItem True
     SetBorderColor 184 218 242
 Show
+    HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
+    SetBorderColor 184 218 242
+Show
+    HasSearingExarchImplicit > 0
+    SetBorderColor 184 218 242
+Show
+    HasEaterOfWorldsImplicit > 0
+    SetBorderColor 184 218 242
+Show
     AnyEnchantment True
     SetBorderColor 184 218 242
 Show

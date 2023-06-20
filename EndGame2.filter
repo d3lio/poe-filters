@@ -37,6 +37,15 @@ Show
     ShaperItem True
     SetBorderColor 184 218 242
 Show
+    HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
+    SetBorderColor 184 218 242
+Show
+    HasSearingExarchImplicit > 0
+    SetBorderColor 184 218 242
+Show
+    HasEaterOfWorldsImplicit > 0
+    SetBorderColor 184 218 242
+Show
     AnyEnchantment True
     SetBorderColor 184 218 242
 Show
@@ -179,68 +188,58 @@ Hide
 # Bases
 #
 
-# Good price bases
-Show
+Show # Good price bases
     BaseType "Thicket Bow"
     SetBorderColor 255 255 119
 
-# ES crafting bases
-Show
+Show # ES crafting bases
     BaseType "Vaal Regalia" "Hubris Circlet" "Fingerless Silk Gloves" "Sorcerer Gloves" "Sorcerer Boots" "Crystal Belt" "Sacrificial Garb"
     ItemLevel >= 86
     SetBorderColor 74 230 58
     SetFontSize 24
 
-# Amethyst
-Show
+Show # Amethyst
     BaseType "Amethyst Ring"
     Rarity "Normal"
     ItemLevel >= 85
 
-# Belts
-Show
+Show # Belts
     BaseType "Stygian Vise" "Micro-Distillery Belt" "Mechalarm Belt" "Vanguard Belt" "Crystal Belt"
     SetTextColor 38 0 86
     SetBackgroundColor 192 128 254
     SetBorderColor 88 0 179
 
-# Rings
-Show
+Show # Rings
     BaseType "Cogwork Ring" "Geodesic Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
     SetTextColor 38 0 86
     SetBackgroundColor 192 128 254
     SetBorderColor 88 0 179
 
-# Amulets
-Show
+Show # Amulets
     BaseType "Unset Amulet" "Simplex Amulet" "Astrolabe Amulet" "Marble Amulet" "Seaglass Amulet" "Blue Pearl Amulet"
     SetTextColor 38 0 86
     SetBackgroundColor 192 128 254
     SetBorderColor 88 0 179
-Show
+Show # Talismans
     BaseType "Talisman"
     SetTextColor 210 0 220
     SetBorderColor 200 200 200
 
-# Jewelry
-Show
+Show # Jewelry
     Class "Ring" "Amulet" "Belt"
     Rarity "Rare"
     SetBorderColor 255 255 119
 
 
-# Body Single
-Show
+Show # Body Single
     BaseType "Gladiator Plate" "Glorious Plate" "Zodiac Leather" "Vaal Regalia"
     Rarity "Rare"
     SetFontSize 24
-# Body Hybrid
-Show
+Show # Body Hybrid
     BaseType "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb"
     Rarity "Rare"
     SetFontSize 24
-# Body Special
-Show
+Show # Body Special
     BaseType "Astral Plate" "Assassin's Garb" "Occultist's Vestment" "Carnal Armour" "Sacrificial Garb"
     Rarity "Rare"
     SetFontSize 24
@@ -249,18 +248,15 @@ Show
     ItemLevel >= 86
     SetFontSize 24
 
-# Gloves Single
-Show
+Show # Gloves Single
     BaseType "Vaal Gauntlets" "Titan Gauntlets" "Slink Gloves" "Stealth Gloves" "Arcanist Gloves" "Sorcerer Gloves"
     Rarity "Rare"
     SetFontSize 24
-# Gloves Hybrid
-Show
+Show # Gloves Hybrid
     BaseType "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
     Rarity "Rare"
     SetFontSize 24
-# Gloves Special
-Show
+Show # Gloves Special
     BaseType "Debilitation Gauntlets" "Spiked Gloves" "Gripped Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets"
     Rarity "Rare"
     SetBorderColor 136 136 255
@@ -269,18 +265,15 @@ Show
     ItemLevel >= 86
     SetBorderColor 136 136 255
 
-# Helmet Single
-Show
+Show # Helmet Single
     BaseType "Royal Burgonet" "Eternal Burgonet" "Sinner Tricorne" "Lion Pelt" "Mind Cage" "Hubris Circlet"
     Rarity "Rare"
     SetFontSize 24
-# Helmet Hybrid
-Show
+Show # Helmet Hybrid
     BaseType "Pig-Faced Bascinet" "Nightmare Bascinet" "Prophet Crown" "Praetor Crown" "Vaal Mask" "Deicide Mask"
     Rarity "Rare"
     SetFontSize 24
-# Helmet Special
-Show
+Show # Helmet Special
     BaseType "Penitent Mask" "Bone Helmet" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
     Rarity "Rare"
     SetBorderColor 136 136 255
@@ -289,18 +282,15 @@ Show
     ItemLevel >= 86
     SetBorderColor 136 136 255
 
-# Boots Single
-Show
+Show # Boots Single
     BaseType "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots"
     Rarity "Rare"
     SetFontSize 24
-# Boots Hybrid
-Show
+Show # Boots Hybrid
     BaseType "Dragonscale Boots" "Crusader Boots" "Murder Boots"
     Rarity "Rare"
     SetFontSize 24
-# Boots Special
-Show
+Show # Boots Special
     BaseType "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Two-Toned Boots" "Fugitive Boots" "Runic Sabatons"
     Rarity "Rare"
     SetBorderColor 136 136 255
@@ -309,28 +299,25 @@ Show
     ItemLevel >= 86
     SetBorderColor 136 136 255
 
-# Experimented
-Show
+
+Show # Experimented
     BaseType "Psychotic Axe" "Apex Cleaver" "Solarine Bow" "Void Fangs" "Pneumatic Dagger" "Infernal Blade" "Boom Mace" "Alternating Sceptre" "Impact Force Propagator" "Battery Staff" "Eventuality Rod" "Anarchic Spiritblade" "Banishing Blade" "Accumulator Wand" "Heat-attuned Tower Shield" "Cold-attuned Buckler" "Transfer-attuned Spirit Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Simplex Amulet" "Astrolabe Amulet" "Cogwork Ring" "Geodesic Ring"
     SetBorderColor 255 255 119
 
-# Wands
-Show
+Show # Wands
     BaseType "Opal Wand" "Tornado Wand" "Prophecy Wand" "Profane Wand" "Convoking Wand"
     Rarity "Rare"
     SetFontSize 24
-# Staves
-Show
+Show # Staves
     BaseType "Eclipse Staff"
     Rarity "Rare"
     SetFontSize 24
-# Scepters
-Show
+
+Show # Scepters
     BaseType "Void Sceptre"
     Rarity "Rare"
     SetFontSize 24
-# Shields
-Show
+Show # Shields
     BaseType "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield"
     Rarity "Rare"
     SetFontSize 24
