@@ -40,6 +40,9 @@ Show
     HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
     SetBorderColor 184 218 242
 Show
+    HasExplicitMod "Veil"
+    SetBorderColor 184 218 242
+Show
     HasSearingExarchImplicit > 0
     SetBorderColor 184 218 242
 Show
@@ -92,6 +95,7 @@ Show
     BaseType "Tainted"
     SetBorderColor 170 158 130
     MinimapIcon 0 Yellow Diamond
+    SetFontSize 40
 Hide
     BaseType "Orb of Transmutation" "Orb of Augmentation"
     StackSize < 5
@@ -112,13 +116,18 @@ Show
     SetBackgroundColor 221 221 221
     SetBorderColor 42 42 42
     MinimapIcon 0 Red Diamond
+    SetFontSize 40
 Show
     Class Currency
     SetBorderColor 170 158 130
     MinimapIcon 0 Yellow Diamond
+    SetFontSize 40
 #*
 # Jewels
 #
+Show
+    BaseType "Eye Jewel"
+    SetBorderColor 180 96 0
 Show
     Class "Jewel"
     Rarity "Rare"
@@ -126,6 +135,9 @@ Show
 Show
     EnchantmentPassiveNum > 0
     SetBorderColor 255 255 255
+Hide
+    Class "Jewel"
+    Rarity "Magic"
 
 #*
 # Divination
@@ -194,14 +206,14 @@ Show # Good price bases
 
 Show # ES crafting bases
     BaseType "Vaal Regalia" "Hubris Circlet" "Fingerless Silk Gloves" "Sorcerer Gloves" "Sorcerer Boots" "Crystal Belt" "Sacrificial Garb"
-    ItemLevel >= 86
+    ItemLevel >= 85
     SetBorderColor 74 230 58
     SetFontSize 24
 
 Show # Amethyst
     BaseType "Amethyst Ring"
     Rarity "Normal"
-    ItemLevel >= 85
+    ItemLevel >= 83
 
 Show # Belts
     BaseType "Stygian Vise" "Micro-Distillery Belt" "Mechalarm Belt" "Vanguard Belt" "Crystal Belt"
@@ -245,7 +257,7 @@ Show # Body Special
     SetFontSize 24
 Show
     BaseType "Astral Plate" "Assassin's Garb" "Occultist's Vestment" "Carnal Armour" "Sacrificial Garb"
-    ItemLevel >= 86
+    ItemLevel >= 83
     SetFontSize 24
 
 Show # Gloves Single
@@ -262,7 +274,7 @@ Show # Gloves Special
     SetBorderColor 136 136 255
 Show
     BaseType "Debilitation Gauntlets" "Spiked Gloves" "Gripped Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets"
-    ItemLevel >= 86
+    ItemLevel >= 83
     SetBorderColor 136 136 255
 
 Show # Helmet Single
@@ -279,7 +291,7 @@ Show # Helmet Special
     SetBorderColor 136 136 255
 Show
     BaseType "Penitent Mask" "Bone Helmet" "Archdemon Crown" "Blizzard Crown" "Runic Crown"
-    ItemLevel >= 86
+    ItemLevel >= 83
     SetBorderColor 136 136 255
 
 Show # Boots Single
@@ -296,7 +308,7 @@ Show # Boots Special
     SetBorderColor 136 136 255
 Show
     BaseType "Brimstone Treads" "Stormrider Boots" "Dreamquest Slippers" "Two-Toned Boots" "Fugitive Boots" "Runic Sabatons"
-    ItemLevel >= 86
+    ItemLevel >= 83
     SetBorderColor 136 136 255
 
 
@@ -327,3 +339,4 @@ Show # Shields
 #
 Hide
     Class "Claw" "Dagger" "One Hand Sword" "Thrusting One Hand Sword" "One Hand Axe" "One Hand Mace" "Bow" "Staff" "Two Hand Sword" "Two Hand Axe" "Two Hand Mace" "Quiver" "Gloves" "Boots" "Body Armour" "Helmet" "Shield" "Sceptre" "Wand" "Amulet" "Ring" "Belt"
+    SetFontSize 24

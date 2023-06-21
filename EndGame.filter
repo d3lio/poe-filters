@@ -40,6 +40,9 @@ Show
     HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
     SetBorderColor 184 218 242
 Show
+    HasExplicitMod "Veil"
+    SetBorderColor 184 218 242
+Show
     HasSearingExarchImplicit > 0
     SetBorderColor 184 218 242
 Show
