@@ -43,6 +43,9 @@ Show
     HasExplicitMod "Veil"
     SetBorderColor 184 218 242
 Show
+    HasExplicitMod "Subterranean" "of the Underground"
+    SetBorderColor 184 218 242
+Show
     HasSearingExarchImplicit > 0
     SetBorderColor 184 218 242
 Show
@@ -97,17 +100,17 @@ Show
     MinimapIcon 0 Yellow Diamond
     SetFontSize 40
 Hide
-    BaseType "Orb of Transmutation" "Orb of Augmentation"
+    BaseType "Orb of Augmentation"
     StackSize < 5
 Hide
-    BaseType "Armourer's Scrap" "Blacksmith's Whetstone"
+    BaseType "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation"
     StackSize < 10
 Hide
     BaseType "Portal Scroll"
     StackSize < 20
 Hide
     BaseType "Scroll of Wisdom"
-    StackSize < 5
+    StackSize < 8
 Show
     BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation"
 Show
@@ -171,6 +174,9 @@ Show
 Show
     BaseType "Granite Flask" "Silver Flask" "Amethyst Flask" "Quicksilver Flask"
     ItemLevel >= 85
+Show
+    BaseType "Granite Flask"
+    ItemLevel >= 84
 Hide
     Class "Flask"
 
@@ -189,7 +195,7 @@ Show
     MinimapIcon 0 Cyan Circle
 Show
     Class Gems
-    Quality >= 20
+    Quality >= 19
 Show
     Class Gems
     GemLevel >= 20
@@ -200,38 +206,50 @@ Hide
 # Bases
 #
 
+Hide
+    ItemLevel < 80
+
+Show
+    Quality == 30
+    SetBackgroundColor 210 0 220
+
 Show # Good price bases
     BaseType "Thicket Bow"
+    SetFontSize 24
     SetBorderColor 255 255 119
 
-Show # ES crafting bases
+Show # Caster gear
     BaseType "Vaal Regalia" "Hubris Circlet" "Fingerless Silk Gloves" "Sorcerer Gloves" "Sorcerer Boots" "Crystal Belt" "Sacrificial Garb"
+    Rarity "Rare"
     ItemLevel >= 85
     SetBorderColor 74 230 58
-    SetFontSize 24
-
-Show # Amethyst
-    BaseType "Amethyst Ring"
-    Rarity "Normal"
-    ItemLevel >= 83
 
 Show # Belts
     BaseType "Stygian Vise" "Micro-Distillery Belt" "Mechalarm Belt" "Vanguard Belt" "Crystal Belt"
+    Rarity "Rare"
     SetTextColor 38 0 86
     SetBackgroundColor 192 128 254
     SetBorderColor 88 0 179
+Hide # Belts
+    BaseType "Chain Belt" "Cloth Belt" "Studded Belt"
 
 Show # Rings
-    BaseType "Cogwork Ring" "Geodesic Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring"
+    BaseType "Cogwork Ring" "Geodesic Ring" "Prismatic Ring" "Cerulean Ring" "Iolite Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Amethyst Ring"
+    Rarity "Rare"
     SetTextColor 38 0 86
     SetBackgroundColor 192 128 254
     SetBorderColor 88 0 179
+Hide # Rings
+    BaseType "Paua Ring" "Gold Ring" "Bone Ring"
 
 Show # Amulets
     BaseType "Unset Amulet" "Simplex Amulet" "Astrolabe Amulet" "Marble Amulet" "Seaglass Amulet" "Blue Pearl Amulet"
+    Rarity "Rare"
     SetTextColor 38 0 86
     SetBackgroundColor 192 128 254
     SetBorderColor 88 0 179
+Hide # Amulets
+    BaseType "Paua Amulet" "Gold Amulet" "Coral Amulet"
 Show # Talismans
     BaseType "Talisman"
     SetTextColor 210 0 220
