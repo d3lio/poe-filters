@@ -206,9 +206,6 @@ Hide
 # Bases
 #
 
-Hide
-    ItemLevel < 80
-
 Show
     Quality == 30
     SetBackgroundColor 210 0 220
